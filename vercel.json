@@ -1,0 +1,14 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/cirurgia-robotica", "destination": "/cirurgia-robotica.html" },
+    { "source": "/sobre-nos", "destination": "/sobre.html" },
+    { "source": "/unidades", "destination": "/unidades.html" },
+    { "source": "/urologista-barra-da-tijuca", "destination": "/urologista-barra-da-tijuca.html" },
+    { "source": "/urologista-bonsucesso", "destination": "/urologista-bonsucesso.html" },
+    { "source": "/entre-em-contato", "destination": "/contato.html" },
+    { "source": "/privacidade", "destination": "/privacidade.html" },
+    { "source": "/cookies", "destination": "/cookies.html" },
+    { "source": "/termos", "destination": "/termos.html" }
+  ]
+}

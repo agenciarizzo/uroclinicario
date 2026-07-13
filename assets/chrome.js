@@ -56,7 +56,12 @@
         '</div></div>'+
       '<div class="nav-item"><a class="nav-link'+active('esp')+'" href="cirurgia-robotica.html">Especialidades'+ico.chev+'</a>'+
         '<div class="dropdown">'+specDrop+'</div></div>'+
-      '<div class="nav-item"><a class="nav-link'+active('unidades')+'" href="unidades.html">Unidades</a></div>'+
+      '<div class="nav-item"><a class="nav-link'+active('unidades')+'" href="unidades.html">Unidades'+ico.chev+'</a>'+
+        '<div class="dropdown">'+
+          '<a href="urologista-barra-da-tijuca.html"><span class="di">'+ico.pin+'</span><span>Barra da Tijuca<small>Zona Oeste · Av. Ayrton Senna</small></span></a>'+
+          '<a href="urologista-bonsucesso.html"><span class="di">'+ico.pin+'</span><span>Bonsucesso<small>Zona Norte · Ilha do Governador</small></span></a>'+
+          '<a href="unidades.html"><span class="di">'+ico.pin+'</span><span>Todas as unidades<small>Endereços e teleconsulta</small></span></a>'+
+        '</div></div>'+
       '<div class="nav-item"><a class="nav-link'+active('contato')+'" href="contato.html">Contato</a></div>'+
     '</nav>'+
     '<div class="header-cta">'+
@@ -71,13 +76,14 @@
     '<a href="cirurgia-robotica.html">Especialidades</a>'+
     '<div class="sub">'+specs.map(function(s){return '<a href="'+s[2]+'">'+s[0]+'</a>';}).join('')+'</div>'+
     '<a href="unidades.html">Unidades</a>'+
+    '<div class="sub"><a href="urologista-barra-da-tijuca.html">Urologista na Barra da Tijuca</a><a href="urologista-bonsucesso.html">Urologista em Bonsucesso</a></div>'+
     '<a href="contato.html">Contato</a>'+
     '<div class="mm-cta"><a class="btn btn-salmon" href="'+WA+'" target="_blank">'+ico.wa+'Agendar pelo WhatsApp</a></div>'+
   '</div>';
 
   var units=[
-    ['Unidade Barra da Tijuca','Av. Ayrton Senna, 2600, Bloco 3, sala 213 · Barra da Tijuca · RJ'],
-    ['Unidade Bonsucesso','Rua Cardoso de Morais, 201, sala 503 · Bonsucesso · RJ']
+    ['Unidade Barra da Tijuca','Av. Ayrton Senna, 2600, Bloco 3, sala 213 · Barra da Tijuca · RJ','urologista-barra-da-tijuca.html'],
+    ['Unidade Bonsucesso','Rua Cardoso de Morais, 201, sala 503 · Bonsucesso · RJ','urologista-bonsucesso.html']
   ];
   var footer =
   '<footer class="site-footer"><div class="wrap">'+
@@ -103,7 +109,7 @@
         '<li><a href="index.html#especialidades">Transplante Renal</a></li>'+
       '</ul></div>'+
       '<div><h4>Unidades</h4>'+
-        units.map(function(u){return '<div class="f-unit"><strong>'+u[0].replace('Unidade ','')+'</strong><span>'+u[1]+'</span></div>';}).join('')+
+        units.map(function(u){return '<div class="f-unit"><strong><a href="'+u[2]+'">'+u[0].replace('Unidade ','')+'</a></strong><span>'+u[1]+'</span></div>';}).join('')+
         '<div class="rt-seal"><strong>Responsável Técnico</strong>Dr. Diego Coutinho Perdigão · CRM-RJ 52 934895 · RQE 32110</div>'+
       '</div>'+
     '</div>'+
