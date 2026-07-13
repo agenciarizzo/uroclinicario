@@ -65,6 +65,13 @@
 .u-line span{font-size:1rem;color:var(--ink)}
 .u-cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
 @media (max-width:880px){.unit{grid-template-columns:1fr;gap:28px}.unit.rev .u-map{order:0}}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.5vw,20px)}
+.gallery figure{position:relative;margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:var(--cloud)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(74,84,112,.82);color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:.42em .85em;border-radius:100px}
+@media (max-width:880px){.gallery{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.gallery{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-page="unidades">
@@ -96,7 +103,7 @@
         <h2>Barra da Tijuca</h2>
         <p class="muted" style="margin:.2rem 0 1.4rem;max-width:52ch">Nossa unidade na Barra da Tijuca fica na Av. Ayrton Senna, um dos principais eixos da Zona Oeste do Rio de Janeiro, com acesso fácil e estrutura moderna. É a referência para quem busca urologista na Barra, no Recreio dos Bandeirantes, em Jacarepaguá, na Freguesia, no Itanhangá, em São Conrado e na Gávea — para consultas de urologia, avaliação uro-oncológica e cirurgia robótica.</p>
         <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Endereço</b><span>Av. Ayrton Senna, 2600, Bloco 3, sala 213 — Barra da Tijuca, Rio de Janeiro · RJ, 22775-003</span></div></div>
-        <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Atendimento</b><span>Segunda a sexta · agende seu horário pelo WhatsApp</span></div></div>
+        <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Atendimento</b><span>Segunda a sexta, das 8h às 17h</span></div></div>
         <div class="u-cta">
           <a class="btn btn-salmon btn-sm" href="https://wa.me/5521976219403" target="_blank">Agendar nesta unidade</a>
           <a class="btn btn-ghost btn-sm" href="https://maps.app.goo.gl/uLzFSqrVp3VULgur5" target="_blank">Como chegar</a>
@@ -117,7 +124,7 @@
         <h2>Bonsucesso</h2>
         <p class="muted" style="margin:.2rem 0 1.4rem;max-width:52ch">A unidade de Bonsucesso atende a Zona Norte do Rio de Janeiro e a Ilha do Governador, na Rua Cardoso de Morais, com boa conexão pela Linha Vermelha e pela Avenida Brasil. É a escolha de quem procura urologista em Bonsucesso, Ramos, Olaria, Penha, Higienópolis, Maria da Graça e Ilha do Governador, com o mesmo corpo clínico e a mesma tecnologia da unidade da Barra.</p>
         <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Endereço</b><span>Rua Cardoso de Morais, 201, sala 503 — Bonsucesso, Rio de Janeiro · RJ, 21032-900</span></div></div>
-        <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Atendimento</b><span>Segunda a sexta · agende seu horário pelo WhatsApp</span></div></div>
+        <div class="u-line"><span class="ui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Atendimento</b><span>Segunda a sexta, das 8h às 17h</span></div></div>
         <div class="u-cta">
           <a class="btn btn-salmon btn-sm" href="https://wa.me/5521976219403" target="_blank">Agendar nesta unidade</a>
           <a class="btn btn-ghost btn-sm" href="https://maps.app.goo.gl/ohQVqXXBJb2N8irH9" target="_blank">Como chegar</a>
@@ -125,6 +132,25 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ESTRUTURA / GALERIA -->
+<section class="section bg-cloud tight">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Nossa estrutura</span>
+      <h2 class="h-xl">Ambientes pensados<br>para o seu conforto.</h2>
+      <p class="muted" style="max-width:66ch;margin-top:.8rem">Recepção acolhedora, consultórios modernos e sala de procedimentos equipada: conheça a estrutura da UroClínica Rio, projetada para oferecer uma experiência de cuidado tranquila e segura em cada visita, com o mesmo padrão na Barra da Tijuca e em Bonsucesso.</p>
+    </div>
+    <div class="gallery" style="margin-top:2.4rem" data-reveal>
+      <figure><img src="assets/uroclinica-recepcao.jpg" alt="Recepção da UroClínica Rio — clínica de urologia no Rio de Janeiro" loading="lazy"><figcaption>Recepção</figcaption></figure>
+      <figure><img src="assets/uroclinica-entrada.jpg" alt="Entrada da UroClínica Rio com a logomarca em destaque" loading="lazy"><figcaption>Entrada</figcaption></figure>
+      <figure><img src="assets/uroclinica-consultorio.jpg" alt="Consultório de urologia da UroClínica Rio" loading="lazy"><figcaption>Consultório</figcaption></figure>
+      <figure><img src="assets/uroclinica-consultorio-2.jpg" alt="Consultório da UroClínica Rio com ambiente acolhedor" loading="lazy"><figcaption>Consultório</figcaption></figure>
+      <figure><img src="assets/uroclinica-sala-procedimentos.jpg" alt="Sala de procedimentos equipada da UroClínica Rio" loading="lazy"><figcaption>Sala de procedimentos</figcaption></figure>
+      <figure><img src="assets/uroclinica-copa.jpg" alt="Copa para o conforto dos pacientes na UroClínica Rio" loading="lazy"><figcaption>Copa</figcaption></figure>
+    </div>
   </div>
 </section>
 

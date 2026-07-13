@@ -109,7 +109,7 @@
     '</div>'+
     '<div class="footer-bottom">'+
       '<p class="fb-legal">© 2026 Uroclínica Rio. Todos os direitos reservados. As informações deste site têm caráter informativo e educacional e não substituem a consulta médica.</p>'+
-      '<div class="fb-links"><a href="#">Privacidade</a><a href="#">Cookies</a><a href="#">Termos</a></div>'+
+      '<div class="fb-links"><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a><a href="termos.html">Termos</a></div>'+
     '</div>'+
   '</div></footer>'+
   '<a class="wa-float" href="'+WA+'" target="_blank" aria-label="WhatsApp">'+ico.wa+'</a>';
@@ -126,6 +126,7 @@
       "image":BASE+"/assets/og-uroclinica.jpg","telephone":"+552197621-9403","url":BASE+"/unidades",
       "address":{"@type":"PostalAddress","streetAddress":street,"addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":cep,"addressCountry":"BR"},
       "geo":{"@type":"GeoCoordinates","latitude":lat,"longitude":lng},
+      "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
       "areaServed":{"@type":"City","name":"Rio de Janeiro"},"medicalSpecialty":"Urologic"};
   }
   function phys(name,crm,desc){
@@ -140,6 +141,7 @@
         "url":BASE+"/","logo":BASE+"/assets/og-uroclinica.jpg","image":BASE+"/assets/og-uroclinica.jpg",
         "description":"Clínica de urologia no Rio de Janeiro especializada em cirurgia robótica, uro-oncologia, andrologia, videolaparoscopia e urologia reconstrutora.",
         "telephone":"+552197621-9403","priceRange":"$$","medicalSpecialty":"Urologic",
+        "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
         "areaServed":{"@type":"City","name":"Rio de Janeiro"},
         "sameAs":["https://www.instagram.com/uroclinicario","https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ"],
         "address":{"@type":"PostalAddress","streetAddress":"Av. Ayrton Senna, 2600, Bloco 3, sala 213","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22775-003","addressCountry":"BR"},
