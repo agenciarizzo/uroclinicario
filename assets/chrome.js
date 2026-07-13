@@ -84,7 +84,7 @@
     '<div class="footer-top">'+
       '<div>'+
         '<a class="brand brand--light" href="index.html" style="margin-bottom:1.4rem"><img class="logo-sym" src="assets/ur_symbol_light.png" alt=""><img class="f-white" src="assets/ur_logo_light.png" alt="UroClínica Rio"></a>'+
-        '<p>Excelência urológica com conforto e confiança. Cirurgia robótica, uro-oncologia e cuidado humanizado no Rio de Janeiro.</p>'+
+        '<p>Excelência urológica com conforto e confiança. Cirurgia robótica, uro-oncologia e cuidado humanizado no Rio de Janeiro, com unidades na Barra da Tijuca e em Bonsucesso.</p>'+
         '<div class="f-socials">'+
           '<a href="https://www.instagram.com/uroclinicario" target="_blank" aria-label="Instagram">'+ico.ig+'</a>'+
           '<a href="https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ" target="_blank" aria-label="YouTube">'+ico.yt+'</a>'+

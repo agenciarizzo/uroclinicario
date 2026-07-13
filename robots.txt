@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
+
+# Libera CSS, JS e imagens para renderização e indexação (Google Imagens)
+Allow: /assets/
+
+# Arquivos internos — não indexar
+Disallow: /brand.md
+Disallow: /screenshots/
+Disallow: /.thumbnail
 
 Sitemap: https://uroclinicario.com.br/sitemap.xml
