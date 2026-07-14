@@ -28,6 +28,56 @@
     </image:image>
   </url>
   <url>
+    <loc>https://uroclinicario.com.br/uro-oncologia</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/uro-oncologia-prostata.jpg</image:loc>
+      <image:title>Uro-oncologia no Rio de Janeiro — câncer de próstata, rim e bexiga</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://uroclinicario.com.br/andrologia</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/andrologia-saude-masculina.jpg</image:loc>
+      <image:title>Andrologia no Rio de Janeiro — disfunção erétil e saúde sexual masculina</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://uroclinicario.com.br/videolaparoscopia</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/videolaparoscopia.jpg</image:loc>
+      <image:title>Videolaparoscopia urológica no Rio de Janeiro — cirurgia minimamente invasiva</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://uroclinicario.com.br/urologia-reconstrutora</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/urologia-reconstrutora-cirurgia.jpg</image:loc>
+      <image:title>Urologia reconstrutora no Rio de Janeiro — estenose de uretra e Peyronie</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://uroclinicario.com.br/transplante-renal</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/transplante-rim.jpg</image:loc>
+      <image:title>Transplante renal no Rio de Janeiro — doador vivo e falecido</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://uroclinicario.com.br/sobre-nos</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
