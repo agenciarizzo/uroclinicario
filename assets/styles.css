@@ -210,6 +210,7 @@ p{margin:0 0 1.1em}
 .f-socials svg{width:17px;height:17px}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding-block:30px;font-size:.8rem}
 .footer-bottom .fb-legal{max-width:640px;line-height:1.55;color:rgba(255,255,255,.5)}
+.rizzo-credit-link:hover{opacity:.8}
 .footer-bottom .fb-links{display:flex;gap:1.4rem;white-space:nowrap}
 .rt-seal{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:.8rem 1rem;font-size:.78rem;line-height:1.4;color:rgba(255,255,255,.75)}
 .rt-seal strong{color:#fff;display:block}
