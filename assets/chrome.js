@@ -15,11 +15,13 @@
     onco:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21c-4-2.5-7-5.8-7-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 19 11c0 1.6-.4 3-1.1 4.2"/><circle cx="17" cy="17" r="3.2"/></svg>',
     andro:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10" cy="14" r="5"/><path d="M14 10l5-5M15 5h4v4"/></svg>',
     laps:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M3 9v6l9 5 9-5V9"/></svg>',
-    recon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h7v10H4zM13 7h7v10h-7"/><path d="M11 12h2"/></svg>'
+    recon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h7v10H4zM13 7h7v10h-7"/><path d="M11 12h2"/></svg>',
+    laser:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h5M16 12h5M12 3v5M12 16v5"/><circle cx="12" cy="12" r="2.6"/></svg>'
   };
 
   var specs=[
     ['Cirurgia Robótica','Precisão minimamente invasiva','cirurgia-robotica.html',ico.robot],
+    ['HoLEP · Laser de Próstata','Próstata a laser, sem cortes','holep.html',ico.laser],
     ['Uro-Oncologia','Tratamento de tumores urológicos','index.html#especialidades',ico.onco],
     ['Andrologia','Saúde sexual e reprodutiva masculina','index.html#especialidades',ico.andro],
     ['Videolaparoscopia','Cirurgia minimamente invasiva','index.html#especialidades',ico.laps],

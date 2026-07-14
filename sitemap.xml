@@ -18,6 +18,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://uroclinicario.com.br/holep</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://uroclinicario.com.br/assets/holep-laser-holmio-megapulse.jpg</image:loc>
+      <image:title>HoLEP no Rio de Janeiro — cirurgia de próstata a laser de hólmio</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://uroclinicario.com.br/sobre-nos</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
