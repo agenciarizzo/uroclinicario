@@ -62,7 +62,7 @@ Common credentials pool (assign on confirmation): Cirurgia Robótica AdventHealt
 - **Valores:** Humanização · Excelência · Ética · Inovação · Compromisso
 
 ## Convênios
-Petrobras · Geap · Prevent Sênior · FioSaúde · Caurj · Camarj (+ consultar secretaria)
+Caurj · Camarj · FioSaúde · Petrobras · Prevent Sênior · Porto Saúde · Fundação Saúde Itaú · Nuclep · Ambep (+ consultar secretaria)
 
 ## Diferenciais (home "por que escolher")
 Corpo clínico (experiência internacional) · Estrutura física (várias unidades, mesmo padrão) · Atendimento humanizado · Comodidade (planos de saúde, teleconsulta).
