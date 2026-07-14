@@ -117,7 +117,18 @@
       '<p class="fb-legal">© 2026 Uroclínica Rio. Todos os direitos reservados. As informações deste site têm caráter informativo e educacional e não substituem a consulta médica.</p>'+
       '<div class="fb-links"><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a><a href="termos.html">Termos</a></div>'+
     '</div>'+
-  '</div></footer>'+
+  '</div>'+
+    '<div class="rizzo-credit" style="background:#050a10;border-top:1px solid rgba(255,255,255,.05);padding:1.5rem 0;width:100%;display:flex;justify-content:center;align-items:center">'+
+      '<p style="margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#64748b;font-weight:300;display:flex;align-items:center;gap:.5rem">'+
+        'Desenvolvido por'+
+        '<a class="rizzo-credit-link" href="https://agenciarizzo.com.br/" target="_blank" rel="noreferrer" aria-label="Site da agência rizzo" style="display:inline-flex;align-items:center;gap:.375rem;text-decoration:none;font-family:\'Rockwell\', Georgia, serif;text-transform:lowercase;letter-spacing:normal;font-size:14px;transition:opacity .2s">'+
+          '<span style="color:#fff;font-weight:700;letter-spacing:-.01em">agência</span>'+
+          '<span style="color:#FFCC00;font-weight:900;letter-spacing:-.03em">|</span>'+
+          '<span style="color:#fff;font-weight:700;letter-spacing:-.01em">rizzo</span>'+
+        '</a>'+
+      '</p>'+
+    '</div>'+
+  '</footer>'+
   '<a class="wa-float" href="'+WA+'" target="_blank" aria-label="WhatsApp">'+ico.wa+'</a>';
 
   var hSlot=document.getElementById('site-header');
