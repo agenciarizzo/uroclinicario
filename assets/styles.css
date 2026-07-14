@@ -246,6 +246,8 @@ p{margin:0 0 1.1em}
 .fig-thumb svg{width:40%;color:rgba(74,84,112,.4);position:relative}
 /* photo variant of .fig */
 .fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+/* embedded Google Maps — fills any .fig / .u-map box */
+.map-frame{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 .fig.photo{background:var(--ink-soft)}
 .fig.photo .fig-pattern,.fig.photo .fig-glow,.fig.photo .fig-mark{display:none}
 .fig.photo .fig-cap{background:var(--salmon);color:var(--ink)}
