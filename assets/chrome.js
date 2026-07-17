@@ -151,7 +151,8 @@
   }
   function phys(name,crm,desc){
     var o={"@type":"Physician","name":name,"medicalSpecialty":"Urologic","worksFor":{"@id":BASE+"/#clinic"},
-      "areaServed":{"@type":"City","name":"Rio de Janeiro"},"identifier":crm,"description":desc};
+      "areaServed":{"@type":"City","name":"Rio de Janeiro"},"description":desc};
+    if(crm) o.identifier=crm;
     return o;
   }
   var ld={
@@ -159,7 +160,7 @@
     "@graph":[
       {"@type":["MedicalClinic","MedicalBusiness"],"@id":BASE+"/#clinic","name":"UroClínica Rio",
         "url":BASE+"/","logo":BASE+"/assets/og-uroclinica.jpg","image":BASE+"/assets/og-uroclinica.jpg",
-        "description":"Clínica de urologia no Rio de Janeiro especializada em cirurgia robótica, uro-oncologia, andrologia, videolaparoscopia e urologia reconstrutora.",
+        "description":"Clínica de urologia no Rio de Janeiro especializada em cirurgia robótica, uro-oncologia, andrologia e estética peniana, videolaparoscopia e urologia reconstrutora.",
         "telephone":"+552197621-9403","priceRange":"$$","medicalSpecialty":"Urologic",
         "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
         "areaServed":{"@type":"City","name":"Rio de Janeiro"},
@@ -171,7 +172,9 @@
           {"@type":"MedicalProcedure","name":"Tratamento de Câncer de Rim"},
           {"@type":"MedicalProcedure","name":"Tratamento de Câncer de Bexiga"},
           {"@type":"MedicalProcedure","name":"Uro-Oncologia"},
-          {"@type":"MedicalProcedure","name":"Andrologia — Disfunção Erétil"},
+          {"@type":"MedicalProcedure","name":"Andrologia e Estética Peniana — Disfunção Erétil"},
+          {"@type":"MedicalProcedure","name":"Estética Peniana"},
+          {"@type":"MedicalProcedure","name":"Ultrassom Peniano com Doppler"},
           {"@type":"MedicalProcedure","name":"Videolaparoscopia Urológica"},
           {"@type":"MedicalProcedure","name":"Urologia Reconstrutora"},
           {"@type":"MedicalProcedure","name":"Vasectomia e Reversão de Vasectomia"},
@@ -186,7 +189,8 @@
         "employee":[
           phys("Dr. Diego Coutinho Perdigão","CRM-RJ 52 934895 · RQE 32110","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. Pedro Boechat","CRM-RJ 52 906174","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
-          phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital.")
+          phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital."),
+          phys("Dr. Gabriel Crelier","","Andrologista no Rio de Janeiro — andrologia e estética peniana, saúde sexual masculina e ultrassom peniano com Doppler.")
         ]
       }
     ]
