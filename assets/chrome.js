@@ -194,7 +194,7 @@
           phys("Dr. Diego Coutinho Perdigão","CRM-RJ 52 934895 · RQE 32110","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. Pedro Boechat","CRM-RJ 52 906174","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital."),
-          phys("Dr. Gabriel Crelier","","Andrologista no Rio de Janeiro — andrologia e estética peniana, saúde sexual masculina e ultrassom peniano com Doppler.")
+          phys("Dr. Gabriel Crelier","CRM-RJ 52.110054-8","Urologista e andrologista no Rio de Janeiro — saúde sexual masculina, estética peniana, prótese peniana, Doppler peniano e infertilidade masculina.")
         ]
       }
     ]
