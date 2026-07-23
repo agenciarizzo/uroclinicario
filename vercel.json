@@ -1,5 +1,8 @@
 {
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/cirurgia-robotica-urologica", "destination": "/cirurgia-robotica", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/cirurgia-robotica", "destination": "/cirurgia-robotica.html" },
     { "source": "/holep", "destination": "/holep.html" },
