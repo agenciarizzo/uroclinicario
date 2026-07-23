@@ -1,5 +1,29 @@
 {
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/cirurgia-robotica-urologica", "destination": "/cirurgia-robotica", "permanent": true },
+    { "source": "/corpo-clinico", "destination": "/sobre-nos#corpo", "permanent": true },
+    { "source": "/termos-de-uso", "destination": "/termos", "permanent": true },
+    { "source": "/politica-de-privacidade", "destination": "/privacidade", "permanent": true },
+    { "source": "/politica-de-cookies", "destination": "/cookies", "permanent": true },
+
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/cirurgia-robotica.html", "destination": "/cirurgia-robotica", "permanent": true },
+    { "source": "/holep.html", "destination": "/holep", "permanent": true },
+    { "source": "/uro-oncologia.html", "destination": "/uro-oncologia", "permanent": true },
+    { "source": "/andrologia.html", "destination": "/andrologia", "permanent": true },
+    { "source": "/videolaparoscopia.html", "destination": "/videolaparoscopia", "permanent": true },
+    { "source": "/urologia-reconstrutora.html", "destination": "/urologia-reconstrutora", "permanent": true },
+    { "source": "/transplante-renal.html", "destination": "/transplante-renal", "permanent": true },
+    { "source": "/sobre.html", "destination": "/sobre-nos", "permanent": true },
+    { "source": "/unidades.html", "destination": "/unidades", "permanent": true },
+    { "source": "/urologista-barra-da-tijuca.html", "destination": "/urologista-barra-da-tijuca", "permanent": true },
+    { "source": "/urologista-bonsucesso.html", "destination": "/urologista-bonsucesso", "permanent": true },
+    { "source": "/contato.html", "destination": "/entre-em-contato", "permanent": true },
+    { "source": "/privacidade.html", "destination": "/privacidade", "permanent": true },
+    { "source": "/cookies.html", "destination": "/cookies", "permanent": true },
+    { "source": "/termos.html", "destination": "/termos", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/cirurgia-robotica", "destination": "/cirurgia-robotica.html" },
     { "source": "/holep", "destination": "/holep.html" },
