@@ -5,6 +5,8 @@
     { "source": "/holep", "destination": "/holep.html" },
     { "source": "/uro-oncologia", "destination": "/uro-oncologia.html" },
     { "source": "/andrologia", "destination": "/andrologia.html" },
+    { "source": "/estetica-peniana", "destination": "/estetica-peniana.html" },
+    { "source": "/ultrassom-peniano-doppler", "destination": "/ultrassom-peniano-doppler.html" },
     { "source": "/videolaparoscopia", "destination": "/videolaparoscopia.html" },
     { "source": "/urologia-reconstrutora", "destination": "/urologia-reconstrutora.html" },
     { "source": "/transplante-renal", "destination": "/transplante-renal.html" },

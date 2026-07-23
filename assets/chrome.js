@@ -17,7 +17,9 @@
     laps:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M3 9v6l9 5 9-5V9"/></svg>',
     recon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h7v10H4zM13 7h7v10h-7"/><path d="M11 12h2"/></svg>',
     laser:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h5M16 12h5M12 3v5M12 16v5"/><circle cx="12" cy="12" r="2.6"/></svg>',
-    transp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>'
+    transp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+    estetica:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></svg>',
+    doppler:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>'
   };
 
   var specs=[
@@ -25,6 +27,8 @@
     ['HoLEP · Laser de Próstata','Próstata a laser, sem cortes','holep.html',ico.laser],
     ['Uro-Oncologia','Tratamento de tumores urológicos','uro-oncologia.html',ico.onco],
     ['Andrologia','Saúde sexual e reprodutiva masculina','andrologia.html',ico.andro],
+    ['Estética Peniana','Procedimentos estéticos e funcionais','estetica-peniana.html',ico.estetica],
+    ['Ultrassom Peniano · Doppler','Avaliação vascular da ereção','ultrassom-peniano-doppler.html',ico.doppler],
     ['Videolaparoscopia','Cirurgia minimamente invasiva','videolaparoscopia.html',ico.laps],
     ['Urologia Reconstrutora','Restauração funcional e estética','urologia-reconstrutora.html',ico.recon],
     ['Transplante Renal','Doador vivo e falecido','transplante-renal.html',ico.transp]
@@ -151,7 +155,8 @@
   }
   function phys(name,crm,desc){
     var o={"@type":"Physician","name":name,"medicalSpecialty":"Urologic","worksFor":{"@id":BASE+"/#clinic"},
-      "areaServed":{"@type":"City","name":"Rio de Janeiro"},"identifier":crm,"description":desc};
+      "areaServed":{"@type":"City","name":"Rio de Janeiro"},"description":desc};
+    if(crm) o.identifier=crm;
     return o;
   }
   var ld={
@@ -159,7 +164,7 @@
     "@graph":[
       {"@type":["MedicalClinic","MedicalBusiness"],"@id":BASE+"/#clinic","name":"UroClínica Rio",
         "url":BASE+"/","logo":BASE+"/assets/og-uroclinica.jpg","image":BASE+"/assets/og-uroclinica.jpg",
-        "description":"Clínica de urologia no Rio de Janeiro especializada em cirurgia robótica, uro-oncologia, andrologia, videolaparoscopia e urologia reconstrutora.",
+        "description":"Clínica de urologia no Rio de Janeiro especializada em cirurgia robótica, uro-oncologia, andrologia e estética peniana, videolaparoscopia e urologia reconstrutora.",
         "telephone":"+552197621-9403","priceRange":"$$","medicalSpecialty":"Urologic",
         "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
         "areaServed":{"@type":"City","name":"Rio de Janeiro"},
@@ -171,7 +176,9 @@
           {"@type":"MedicalProcedure","name":"Tratamento de Câncer de Rim"},
           {"@type":"MedicalProcedure","name":"Tratamento de Câncer de Bexiga"},
           {"@type":"MedicalProcedure","name":"Uro-Oncologia"},
-          {"@type":"MedicalProcedure","name":"Andrologia — Disfunção Erétil"},
+          {"@type":"MedicalProcedure","name":"Andrologia e Estética Peniana — Disfunção Erétil"},
+          {"@type":"MedicalProcedure","name":"Estética Peniana"},
+          {"@type":"MedicalProcedure","name":"Ultrassom Peniano com Doppler"},
           {"@type":"MedicalProcedure","name":"Videolaparoscopia Urológica"},
           {"@type":"MedicalProcedure","name":"Urologia Reconstrutora"},
           {"@type":"MedicalProcedure","name":"Vasectomia e Reversão de Vasectomia"},
@@ -186,7 +193,8 @@
         "employee":[
           phys("Dr. Diego Coutinho Perdigão","CRM-RJ 52 934895 · RQE 32110","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. Pedro Boechat","CRM-RJ 52 906174","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
-          phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital.")
+          phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital."),
+          phys("Dr. Gabriel Crelier","CRM-RJ 52.110054-8","Urologista e andrologista no Rio de Janeiro — saúde sexual masculina, estética peniana, prótese peniana, Doppler peniano e infertilidade masculina.")
         ]
       }
     ]
