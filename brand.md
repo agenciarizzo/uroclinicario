@@ -37,12 +37,17 @@ Reference aesthetic: linha 2026 do pack (kickoff "UroClinica Kickoff") — flat 
 - **Bonsucesso** — Rua Cardoso de Morais, 201, sala 503 — 21032-900
 
 ## Navigation (current IA)
-Início · Sobre nós (› Corpo clínico) · Especialidades (› Cirurgia Robótica Urológica · Uro-oncologista · Andrologista · Videolaparoscopia · Urologia Reconstrutora) · Área do paciente · Unidades · Contato
+Início · Sobre nós (› Corpo clínico) · Especialidades (› Cirurgia Robótica Urológica · Uro-oncologista · Andrologista › **Estética Peniana** · **Ultrassom Peniano com Doppler** · HoLEP · Videolaparoscopia · Urologia Reconstrutora · Transplante Renal) · Área do paciente · Unidades · Contato
+
+**URLs canônicas (sempre sem `.html` — é o que vai no anúncio):** `/` · `/andrologia` · `/estetica-peniana` · `/ultrassom-peniano-doppler` · `/cirurgia-robotica` · `/holep` · `/uro-oncologia` · `/videolaparoscopia` · `/urologia-reconstrutora` · `/transplante-renal` · `/sobre-nos` · `/unidades` · `/urologista-barra-da-tijuca` · `/urologista-bonsucesso` · `/entre-em-contato`
 
 ## Specialties (6 pillars)
 1. **Cirurgia Robótica** — minimally invasive, high precision, faster recovery
 2. **Uro-Oncologia** — próstata, rim, bexiga, testículo, pênis
 3. **Andrologia** — disfunção erétil, ejaculação precoce, infertilidade, Peyronie, varicocele
+   - **Estética Peniana** (página própria: `/estetica-peniana`) — procedimentos estéticos e funcionais do órgão genital masculino, sempre com avaliação médica individualizada e indicação criteriosa. **Sem promessa de resultado, sem "antes e depois".**
+   - **Ultrassom Peniano com Doppler** (página própria: `/ultrassom-peniano-doppler`) — exame de imagem que avalia o fluxo sanguíneo do pênis; indolor e não invasivo. Investiga disfunção erétil e doença de Peyronie.
+   - **Prótese Peniana** — implante, no âmbito da andrologia.
 4. **Videolaparoscopia** — minimally invasive, small incisions
 5. **Urologia Reconstrutora** — Peyronie, estenose uretral, hipospádia, reconstrução
 6. **Transplante Renal** (incl. intervivo)
@@ -50,10 +55,11 @@ Início · Sobre nós (› Corpo clínico) · Especialidades (› Cirurgia Robó
 Notable procedures: biópsia de próstata transperineal com fusão de imagens, reversão de vasectomia, HoLEP, Rezum, enucleação prostática robótica, prostatectomia radical robótica, nefrectomia parcial robótica, cistectomia radical robótica, uretroplastia, implante de prótese peniana, sling feminino, promontofixação laparoscópica.
 
 ## Corpo clínico (⚠️ PENDING client confirmation — bios flagged as swapped)
-Three surgeons. Keep credential-light in design; final bios TBD.
+Four physicians. Keep credential-light in design; final bios TBD.
 - **Dr. Diego Coutinho Perdigão** — Uro-oncologia e Cirurgia Robótica · CRM-RJ 52 934895 · RQE 32110 (Responsável Técnico)
 - **Dr. Pedro Boechat** — Uro-oncologia e Cirurgia Robótica · CRM-RJ 52 906174 (confirm)
 - **Dr. João Boechat** — Urologia Reconstrutora, Cirurgia Genital e Urologia Geral · CRM-RJ 52 1050079
+- **Dr. Gabriel Crelier** — Andrologia e Estética Peniana · CRM-RJ 52.110054-8 — saúde sexual masculina, estética peniana, prótese peniana, Doppler peniano, infertilidade masculina. Foto: `assets/dr-gabriel-crelier.jpg`. ⚠️ **RQE não informado** — nas peças pagas, citar como "urologista" + CRM e tratar andrologia como área de cuidado da clínica, não como título dele. O RT dos anúncios continua sendo o Dr. Diego.
 Common credentials pool (assign on confirmation): Cirurgia Robótica AdventHealth Nicholson Center (Florida), Fellowship Bordeaux (Clinique Saint Augustin), Instituto D'OR, Programa Estadual de Transplantes RJ, SBU titular, UERJ/HUPE reconstrutora, IRCAD, observerships Pune (India) & Belgrade (Serbia).
 
 ## Values / Mission

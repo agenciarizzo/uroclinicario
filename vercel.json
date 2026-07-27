@@ -12,6 +12,8 @@
     { "source": "/holep.html", "destination": "/holep", "permanent": true },
     { "source": "/uro-oncologia.html", "destination": "/uro-oncologia", "permanent": true },
     { "source": "/andrologia.html", "destination": "/andrologia", "permanent": true },
+    { "source": "/estetica-peniana.html", "destination": "/estetica-peniana", "permanent": true },
+    { "source": "/ultrassom-peniano-doppler.html", "destination": "/ultrassom-peniano-doppler", "permanent": true },
     { "source": "/videolaparoscopia.html", "destination": "/videolaparoscopia", "permanent": true },
     { "source": "/urologia-reconstrutora.html", "destination": "/urologia-reconstrutora", "permanent": true },
     { "source": "/transplante-renal.html", "destination": "/transplante-renal", "permanent": true },
