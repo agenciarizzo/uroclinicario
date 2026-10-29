@@ -129,6 +129,9 @@ p{margin:0 0 1.1em}
 .topbar .tb-socials{display:flex;gap:.9rem}
 .topbar .tb-socials a{display:inline-flex}
 .topbar .tb-socials svg{width:1.05em;height:1.05em}
+.hd-socials{display:none;align-items:center;gap:.2rem;color:var(--ink)}
+.hd-socials a{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center}
+.hd-socials svg{width:20px;height:20px}
 
 .site-header{position:sticky;top:0;z-index:200;background:rgba(244,244,246,.88);backdrop-filter:blur(14px);
   border-bottom:1px solid transparent;transition:padding .4s var(--ease),box-shadow .4s var(--ease),background .4s var(--ease),border-color .4s var(--ease)}
@@ -456,6 +459,7 @@ p{margin:0 0 1.1em}
 @media (max-width:680px){
   body{font-size:16px}
   .topbar{display:none}
+  .hd-socials{display:inline-flex}
   .footer-top{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;align-items:flex-start;gap:1.2rem}
   .logo-lockup{height:40px}
