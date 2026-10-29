@@ -33,6 +33,18 @@
     ['Urologia Reconstrutora','Restauração funcional e estética','urologia-reconstrutora.html',ico.recon],
     ['Transplante Renal','Doador vivo e falecido','transplante-renal.html',ico.transp]
   ];
+  /* Fonte única das redes (topo, barra do celular, rodapé e sameAs do JSON-LD).
+     Só perfis com procedência (já no sameAs do site). Sem Facebook/LinkedIn. */
+  var SOCIALS=[
+    {id:'ig',url:'https://www.instagram.com/uroclinicario',label:'Instagram da UroClínica Rio'},
+    {id:'yt',url:'https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ',label:'YouTube da UroClínica Rio'}
+  ];
+  function socialLinks(){
+    return SOCIALS.map(function(x){
+      return '<a href="'+x.url+'" target="_blank" rel="noopener noreferrer" aria-label="'+x.label+'">'+ico[x.id]+'</a>';
+    }).join('');
+  }
+
   var specDrop = specs.map(function(s){
     return '<a href="'+s[2]+'"><span class="di">'+s[3]+'</span><span>'+s[0]+'<small>'+s[1]+'</small></span></a>';
   }).join('');
@@ -47,10 +59,7 @@
     '</div>'+
     '<div class="tb-right">'+
       '<a class="tb-item" href="'+WA+'" target="_blank">'+ico.wa+'(21) 97621-9403</a>'+
-      '<span class="tb-socials">'+
-        '<a href="https://www.instagram.com/uroclinicario" target="_blank" aria-label="Instagram">'+ico.ig+'</a>'+
-        '<a href="https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ" target="_blank" aria-label="YouTube">'+ico.yt+'</a>'+
-      '</span>'+
+      '<span class="tb-socials">'+socialLinks()+'</span>'+
     '</div>'+
   '</div></div>'+
   '<header class="site-header"><div class="wrap"><div class="bar">'+
@@ -73,6 +82,7 @@
       '<div class="nav-item"><a class="nav-link'+active('contato')+'" href="contato.html">Contato</a></div>'+
     '</nav>'+
     '<div class="header-cta">'+
+      '<span class="hd-socials">'+socialLinks()+'</span>'+
       '<a class="btn btn-salmon btn-sm" href="'+WA+'" target="_blank">'+ico.wa+'Agendar consulta</a>'+
       '<button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>'+
     '</div>'+
@@ -100,8 +110,7 @@
         '<a class="brand brand--light" href="index.html" style="margin-bottom:1.4rem"><img class="logo-sym" src="assets/ur_symbol_light.png" alt=""><img class="f-white" src="assets/ur_logo_light.png" alt="UroClínica Rio"></a>'+
         '<p>Excelência urológica com conforto e confiança. Cirurgia robótica, uro-oncologia e cuidado humanizado no Rio de Janeiro, com unidades na Barra da Tijuca e em Bonsucesso.</p>'+
         '<div class="f-socials">'+
-          '<a href="https://www.instagram.com/uroclinicario" target="_blank" aria-label="Instagram">'+ico.ig+'</a>'+
-          '<a href="https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ" target="_blank" aria-label="YouTube">'+ico.yt+'</a>'+
+          socialLinks()+
           '<a href="'+WA+'" target="_blank" aria-label="WhatsApp">'+ico.wa+'</a>'+
         '</div>'+
       '</div>'+
@@ -168,7 +177,7 @@
         "telephone":"+552197621-9403","priceRange":"$$","medicalSpecialty":"Urologic",
         "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
         "areaServed":{"@type":"City","name":"Rio de Janeiro"},
-        "sameAs":["https://www.instagram.com/uroclinicario","https://www.youtube.com/channel/UCRfb5Zu4s-a0pc3beEqX-UQ"],
+        "sameAs":SOCIALS.map(function(x){return x.url;}),
         "address":{"@type":"PostalAddress","streetAddress":"Av. Ayrton Senna, 2600, Bloco 3, sala 213","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"22775-003","addressCountry":"BR"},
         "availableService":[
           {"@type":"MedicalProcedure","name":"Cirurgia Robótica Urológica no Rio de Janeiro"},
