@@ -50,7 +50,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "mcp__Zapier__execute_zapier_read_action|mcp__Zapier__execute_zapier_write_action",
+        "matcher": "mcp__.*__execute_zapier_(read|write)_action",
         "hooks": [
           {
             "type": "command",

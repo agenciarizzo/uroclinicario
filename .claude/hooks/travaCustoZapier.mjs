@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 /**
- * Hook PreToolUse (matcher: `mcp__Zapier__execute_zapier_(read|write)_action`) — trava de custo do Zapier MCP
+ * Hook PreToolUse (matcher: `mcp__.*__execute_zapier_(read|write)_action`) — trava de custo do Zapier MCP
  * (cliente, 2026-10-28).
  *
  * Cada ação executada pelo conector do Zapier é cobrada como tarefa (~US$ 0,09 por chamada). Em 27/10 uma limpeza
  * de e-mail pelo conector gastou 2.098 tarefas além do plano = R$ 493,29 (docs/REGRAS_CASOS_MAPA.md §56). A regra
  * (volume vai por conector nativo; Zapier só pro que não tem; o custo vai antes de qualquer lote) mora em
- * docs/ZAPIER_SAIDA_MAPA.md §14. Aqui a trava é técnica: conta as chamadas da sessão e, passada a 25ª, NEGA com o
- * pedido de ok do Raphael.
+ * docs/ZAPIER_SAIDA_MAPA.md §14. Aqui a trava é técnica: conta as chamadas da sessão e NEGA o que passa do teto,
+ * com o pedido de ok do Raphael.
+ *
+ * Teto 0 desde 30/10/2026 (era 25): o Raphael decidiu sair do Zapier, e a trava deixou passar o que ele achava
+ * travado — o nome do servidor (§16.4, curado acima no FERRAMENTA) e o teto por conversa (§17). Agora nenhuma chamada
+ * passa sem liberação, com qualquer nome de servidor; o conector nativo é o caminho (ZAPIER_SAIDA_MAPA.md §16–§17).
  *
  * Contador: 1 arquivo por chamada (`<raiz>/<sessão>/0001`…), criado com `wx` — atômico, então chamadas em paralelo
  * não furam o teto. A chamada negada devolve a vaga. Container novo (sessão retomada noutro dia) começa a pasta
@@ -26,10 +30,12 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const TETO = 25;
-const FERRAMENTA = /^mcp__Zapier__execute_zapier_(read|write)_action$/;
+export const TETO = 0;
+// Qualquer nome de servidor: o conector do claude.ai entra como `mcp__<uuid>__…`, não `mcp__Zapier__…`, e com o nome
+// fixo a trava deixou passar 959 chamadas em 30/10 (docs/ZAPIER_SAIDA_MAPA.md §16.4).
+const FERRAMENTA = /^mcp__.+__execute_zapier_(read|write)_action$/;
 // Só o bloco tool_use de verdade: o registro de ferramentas adiadas também traz o nome, mas não o par type+id.
-const CHAMADA_NO_TRANSCRIPT = /"type":"tool_use","id":"([^"]+)","name":"mcp__Zapier__execute_zapier_(?:read|write)_action"/g;
+const CHAMADA_NO_TRANSCRIPT = /"type":"tool_use","id":"([^"]+)","name":"mcp__[^"]+__execute_zapier_(?:read|write)_action"/g;
 
 const raiz = () => process.env.RIZZO_TRAVA_ZAPIER_DIR || join(tmpdir(), 'rizzo-trava-zapier');
 const pastaDa = (sessao) => join(raiz(), String(sessao).replace(/[^\w.-]/g, '_'));
@@ -85,12 +91,13 @@ export function decidir(entrada) {
   if (n <= tetoDa(pasta)) return null;
   unlinkSync(join(pasta, vaga(n)));
   const feitas = n - 1;
-  return `Trava de custo Zapier: ${feitas} chamadas nesta conversa (~US$ 0,09 cada). ` +
-    'Peça o ok do Raphael com a estimativa antes de seguir. ' +
-    'Como: 1 AskUserQuestion com quantas chamadas faltam e o custo (quantas × US$ 0,09); se um conector nativo ' +
-    '(Gmail, Google Drive, Google Calendar, Trello, Supabase…) faz o mesmo sem custo por chamada, essa opção vai antes. ' +
+  return 'Zapier fechado (Raphael, 30/10/2026: sair do Zapier; a fatura estourou com chamadas de agente). ' +
+    `Liberadas e usadas nesta conversa: ${feitas}; esta foi negada (~US$ 0,09 cada). ` +
+    'Use o conector nativo, que não cobra por chamada: Google Docs, Google Drive, Gmail, Google Calendar, ' +
+    'Google Sheets, Trello, Supabase, mLabs. ' +
+    'Só se não houver nativo e for indispensável: 1 AskUserQuestion com quantas chamadas e o custo (quantas × US$ 0,09). ' +
     `Só se ele escolher liberar: node "${fileURLToPath(import.meta.url)}" --liberar ${sessao} <quantas ele aprovou>. ` +
-    'Sem o ok, não siga pelo Zapier. Regra: docs/ZAPIER_SAIDA_MAPA.md §14 (rizzo-os).';
+    'Sem o ok, não siga pelo Zapier. Regra: docs/ZAPIER_SAIDA_MAPA.md §17 (rizzo-os).';
 }
 
 /** Grava a liberação da sessão: o teto passa a ser o que já foi usado + `quantas`. Devolve o novo teto. */
