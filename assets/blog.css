@@ -1,0 +1,52 @@
+/* Blog da UroClínica Rio · linha da aquarela (rizzo-os docs/UR_LANDING_ANDROLOGIA_MAPA.md).
+   Texto só em nanquim violeta sobre o papel; o laranja #D9834E nunca vira texto (texto laranja = #A9501E). */
+:root{--aq-paper:#FBF8F3;--aq-ink:#3B3152;--aq-violet:#5B4A8B;--aq-mid:#7A68A6;--aq-lav-soft:#EFEBF6;--aq-orange:#A9501E;--aq-body:#574E6C;--aq-line:#E7E1EF}
+.bl-paper{background:var(--aq-paper);color:var(--aq-ink)}
+.bl-paper h1,.bl-paper h2,.bl-paper h3{color:var(--aq-ink)}
+.bl-paper .eyebrow{color:var(--aq-orange)}
+.bl-crumb{display:flex;gap:.5rem;flex-wrap:wrap;font-size:.8rem;color:#6E6684;margin-bottom:1.1rem}
+.bl-crumb a:hover{color:var(--aq-ink)}
+.bl-crumb span{opacity:.5}
+.bl-hero{padding-block:clamp(28px,5vw,72px) clamp(28px,4vw,56px);overflow:hidden}
+.bl-hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,64px);align-items:center}
+.bl-hero h1{font-size:clamp(1.95rem,4vw,3.25rem);line-height:1.07;letter-spacing:-.022em;font-weight:700;margin:.55rem 0 1rem;max-width:20ch}
+.bl-dek{font-size:clamp(1.02rem,1.4vw,1.15rem);line-height:1.6;color:var(--aq-body);max-width:48ch;margin:0 0 1.2rem}
+.bl-meta{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.84rem;color:#6E6684}
+.bl-meta span{display:inline-flex;align-items:center;gap:.4rem}
+.bl-meta svg{width:15px;height:15px;color:var(--aq-mid)}
+.bl-aq{margin:0;max-width:500px;justify-self:end;width:100%}
+.bl-aq img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;--f:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-image:var(--f);mask-image:var(--f);-webkit-mask-composite:source-in;mask-composite:intersect}
+.bl-aq.tall img{aspect-ratio:4/5}
+.bl-body{max-width:720px;margin:0 auto;padding-block:clamp(28px,4vw,56px) clamp(40px,5vw,72px);font-size:1.07rem;line-height:1.75;color:var(--aq-body)}
+.bl-body .lead{font-size:clamp(1.12rem,1.6vw,1.28rem);line-height:1.6;color:var(--aq-ink);margin-bottom:1.6rem}
+.bl-body h2{font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.18;letter-spacing:-.015em;margin:2.6rem 0 .9rem;color:var(--aq-ink)}
+.bl-body p{margin:0 0 1.1rem}
+.bl-body ul,.bl-body ol{margin:0 0 1.3rem;padding-left:1.3rem;display:grid;gap:.5rem}
+.bl-body li::marker{color:var(--aq-mid)}
+.bl-body strong{color:var(--aq-ink)}
+.bl-body a:not(.btn){color:var(--aq-orange);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.bl-body ol.refs{font-size:.86rem;line-height:1.55;gap:.6rem;color:#6E6684}
+.bl-body ol.refs a{font-weight:500;word-break:break-word}
+.bl-body .disclaimer{font-size:.86rem;color:#6E6684;font-style:italic;margin-top:1.6rem}
+.bl-sign{display:flex;gap:14px;align-items:center;margin-top:2.2rem;padding:1.2rem 1.3rem;border:1px solid var(--aq-line);border-radius:16px;background:#fff;font-size:.9rem;line-height:1.5;color:var(--aq-body)}
+.bl-sign b{color:var(--aq-ink)}
+.bl-sign .ico{width:44px;height:44px;border-radius:50%;background:var(--aq-lav-soft);color:var(--aq-violet);display:grid;place-items:center;flex:none}
+.bl-sign .ico svg{width:20px;height:20px}
+.bl-cta{margin:2.4rem 0 0;padding:clamp(22px,3vw,32px);border-radius:20px;background:var(--aq-ink);color:rgba(255,255,255,.85)}
+.bl-cta h3{color:#fff;font-size:1.35rem;margin:0 0 .5rem}
+.bl-cta p{margin:0 0 1.2rem;color:rgba(255,255,255,.8)}
+.bl-cta .btns{display:flex;gap:.7rem;flex-wrap:wrap}
+.bl-faq h2{text-align:center}
+.bl-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px);margin-top:2.2rem}
+.bl-cards a{display:flex;flex-direction:column;background:#fff;border:1px solid var(--aq-line);border-radius:18px;overflow:hidden;color:inherit;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.bl-cards a:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(59,49,82,.55)}
+.bl-cards .th{aspect-ratio:16/10;background:var(--aq-paper);overflow:hidden}
+.bl-cards .th img{width:100%;height:100%;object-fit:cover}
+.bl-cards .bd{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+.bl-cards small{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--aq-orange)}
+.bl-cards h3{font-size:1.1rem;margin:0;color:var(--aq-ink);line-height:1.3}
+.bl-cards p{font-size:.9rem;color:var(--aq-body);margin:0}
+.bl-cards .more{margin-top:auto;padding-top:.6rem;font-size:.74rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--aq-orange)}
+@media (max-width:900px){.bl-cards{grid-template-columns:1fr}.bl-hero .wrap{grid-template-columns:1fr}.bl-aq{justify-self:center;max-width:380px}}
+@media (max-width:600px){.bl-cta .btns .btn{flex:1 1 100%;justify-content:center}.bl-aq{max-width:300px}.bl-sign{align-items:flex-start}}
+.bl-paper .h-xl{margin-bottom:1.1rem}
