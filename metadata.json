@@ -1,0 +1,8 @@
+{
+  "name": "UroClínica Rio",
+  "description": "Clínica de urologia de referência no Rio de Janeiro. Cirurgia robótica de próstata, HoLEP, uro-oncologia, andrologia e procedimentos minimamente invasivos na Barra da Tijuca e Bonsucesso.",
+  "version": "1.0.0",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
