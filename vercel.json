@@ -12,6 +12,7 @@
     { "source": "/holep.html", "destination": "/holep", "permanent": true },
     { "source": "/uro-oncologia.html", "destination": "/uro-oncologia", "permanent": true },
     { "source": "/andrologia.html", "destination": "/andrologia", "permanent": true },
+    { "source": "/andrologia-nova.html", "destination": "/andrologia-nova", "permanent": false },
     { "source": "/videolaparoscopia.html", "destination": "/videolaparoscopia", "permanent": true },
     { "source": "/urologia-reconstrutora.html", "destination": "/urologia-reconstrutora", "permanent": true },
     { "source": "/transplante-renal.html", "destination": "/transplante-renal", "permanent": true },
@@ -29,6 +30,7 @@
     { "source": "/holep", "destination": "/holep.html" },
     { "source": "/uro-oncologia", "destination": "/uro-oncologia.html" },
     { "source": "/andrologia", "destination": "/andrologia.html" },
+    { "source": "/andrologia-nova", "destination": "/andrologia-nova.html" },
     { "source": "/estetica-peniana", "destination": "/estetica-peniana.html" },
     { "source": "/ultrassom-peniano-doppler", "destination": "/ultrassom-peniano-doppler.html" },
     { "source": "/videolaparoscopia", "destination": "/videolaparoscopia.html" },
@@ -42,5 +44,9 @@
     { "source": "/privacidade", "destination": "/privacidade.html" },
     { "source": "/cookies", "destination": "/cookies.html" },
     { "source": "/termos", "destination": "/termos.html" }
+  ],
+  "headers": [
+    { "source": "/andrologia-nova", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/andrologia-nova.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
   ]
 }
