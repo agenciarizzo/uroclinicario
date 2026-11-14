@@ -1,0 +1,162 @@
+{
+  "/ #2 Agendar pelo WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #0 (21) 97621-9403 → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #1 Agendar consulta → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #3 Agendar consulta → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #4 Agendar no Doctoralia → https://www.doctoralia.com.br/diego-perdigao/urologista/": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": true
+  },
+  "/ #5 Agendar no Doctoralia → https://www.doctoralia.com.br/pedro-boechat-de-souza/uro": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": true
+  },
+  "/ #6 Agendar no Doctoralia → https://www.doctoralia.com.br/joao-boechat-de-souza/urol": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": true
+  },
+  "/ #7 Agendar avaliação → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #8 WhatsApp (21) 97621-9403 → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #9 WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/ #10 WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #0 (21) 97621-9403 → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #1 Agendar consulta → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #2 Agendar pelo WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #3 (21) 97621-9403 → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #4 WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #7 WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #5 clique aqui → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato #6 WhatsApp → https://wa.me/5521976219403": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "click"
+    ],
+    "ads": false,
+    "doctoralia": false
+  },
+  "/entre-em-contato formulário (envio)": {
+    "eventos": [
+      "agendamento_whatsapp",
+      "form_start"
+    ],
+    "ads": false,
+    "doctoralia": false
+  }
+}
