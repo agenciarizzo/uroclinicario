@@ -78,10 +78,5 @@
     });
   });
 
-  // Google Ads conversion on any WhatsApp / agendamento click
-  document.addEventListener('click', function(e){
-    if(!e.target.closest) return;
-    var a = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp"], a[href*="whatsapp.com"], a[href*="doctoralia.com.br"]');
-    if(a && typeof window.uroConversion === 'function') window.uroConversion();
-  });
+  // Conversão/eventos de WhatsApp, telefone e Doctoralia: assets/gtag.js (um ouvinte só, com o aviso de ciência)
 })();
