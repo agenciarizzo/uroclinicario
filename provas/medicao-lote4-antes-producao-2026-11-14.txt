@@ -1,0 +1,30 @@
+/ | /whatsapp | WhatsApp #0                                                    generate_lead
+/ | /whatsapp?origem=hero | Agendar no WhatsApp #1                             generate_lead, scroll
+/ | /whatsapp?origem=sintomas | Falar com Especialista #2                      generate_lead, scroll
+/ | /whatsapp?origem=sintomas | Falar com Especialista #3                      generate_lead, scroll
+/ | /whatsapp?origem=faq | Tirar Dúvidas no WhatsApp #4                        generate_lead
+/ | /whatsapp?origem=cta_final | Agendar Minha Consulta Agora #5               generate_lead
+/ | /whatsapp?origem=botao_flutuante | Agendar no WhatsApp #6                  generate_lead
+/ | tel:+5527995772421 | Ligar para a clínica #7                               generate_lead, scroll
+/procedimentos-linhares | /whatsapp | WhatsApp #0                              generate_lead, scroll
+/procedimentos-linhares | /whatsapp?origem=procedimentos | Agendar Avaliação #1 generate_lead
+/procedimentos-linhares | /whatsapp?origem=cta_final | Agendar Minha Consulta Agora #2 generate_lead
+/procedimentos-linhares | /whatsapp?origem=botao_flutuante | Agendar no WhatsApp #3 generate_lead
+/procedimentos-linhares | tel:+5527995772421 | Ligar para a clínica #4         generate_lead
+/usg-musculoesqueletico | /whatsapp | WhatsApp #0                              generate_lead
+/usg-musculoesqueletico | /whatsapp?motivo=Ultrassom%20Musculoesquel%C3%A9tico | Agendar Exame / Consulta #1 generate_lead
+/usg-musculoesqueletico | /whatsapp?origem=cta_final | Agendar Minha Consulta Agora #2 generate_lead, scroll
+/usg-musculoesqueletico | /whatsapp?origem=botao_flutuante | Agendar no WhatsApp #3 generate_lead
+/usg-musculoesqueletico | tel:+5527995772421 | Ligar para a clínica #4         generate_lead
+/procedimentos/cirurgia-joanete-hallux-valgus | /whatsapp | WhatsApp #0        generate_lead
+/procedimentos/cirurgia-joanete-hallux-valgus | /whatsapp?motivo=Joanete | Agendar Avaliação #1 generate_lead
+/procedimentos/cirurgia-joanete-hallux-valgus | /whatsapp?origem=cta_final | Agendar Minha Consulta Agora #2 generate_lead
+/procedimentos/cirurgia-joanete-hallux-valgus | /whatsapp?origem=botao_flutuante | Agendar no WhatsApp #3 generate_lead
+/procedimentos/cirurgia-joanete-hallux-valgus | tel:+5527995772421 | Ligar para a clínica #4 generate_lead
+/blog | /whatsapp | WhatsApp #0                                                generate_lead
+/blog | /whatsapp?origem=botao_flutuante | Agendar no WhatsApp #1              generate_lead
+/blog | tel:+5527995772421 | Ligar para a clínica #2                           generate_lead, scroll
+/agendamento | tel: | Ligar                                                    generate_lead, scroll
+/agendamento | fluxo até Enviar no WhatsApp                                    generate_lead, scroll
+/whatsapp aberto direto (ponte, sem clique)                                    
+eventos gravados em provas/eventos-antes.json
