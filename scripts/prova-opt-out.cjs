@@ -20,7 +20,7 @@ if (!/^https:\/\//.test(BASE)) {
 const AW = 'AW-620455971';
 const ROTULO = 'zxJzCOn6y70CEKPQ7acC';
 const tipos = {html: 'text/html', js: 'application/javascript', css: 'text/css', svg: 'image/svg+xml', webp: 'image/webp', jpg: 'image/jpeg', png: 'image/png', woff2: 'font/woff2', mp4: 'video/mp4', json: 'application/json', xml: 'application/xml', txt: 'text/plain', ico: 'image/x-icon', avif: 'image/avif', zip: 'application/zip'};
-const GOOGLE = /googletagmanager\.com|google-analytics\.com|analytics\.google\.com|googleadservices\.com|doubleclick\.net|google\.com\/(pagead|ccm|g\/collect)|googlesyndication\.com/;
+const GOOGLE = /googletagmanager\.com|google-analytics\.com|analytics\.google\.com|googleadservices\.com|doubleclick\.net|google\.com(\.br)?\/(?!maps)|googlesyndication\.com/;
 const SAIDAS = /^https:\/\/(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com|www\.doctoralia\.com\.br)\//;
 const AUTOMATICOS = /^(page_view|user_engagement|scroll|first_visit|session_start)$/;
 const WA_URL = 'https://wa.me/5521976219403?text=teste';

@@ -1,0 +1,62 @@
+✅ 1. aviso na tela (texto da DM, Recusar e Ok)                       {"aviso":"Medimos as visitas para melhorar o atendimento, conforme a LGPD. Saiba mais na política de cookies. Recusar Ok"}
+✅ 1b. aviso não cobre o botão flutuante do WhatsApp a 390 px         {"livre":true}
+✅ 2. carga sem tocar no aviso: page_view com gcs=G111                {"carga":["etiqueta G-04JZ3XEL1C","hit G-04JZ3XEL1C page_view G111","hit G-04JZ3XEL1C ? G111","etiqueta AW-620455971","hit AW-620455971 page_view G111","hit  ? -"]}
+✅ 3. 1º clique no WhatsApp: conversion do Ads (AW/rótulo, G111) + GA4 {"c1":["ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit  conversion G111","hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C click G111","saida wa.me"]}
+✅ 4. repetição na mesma sessão: sem hit do Ads, GA4 sai              {"c2":["hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C click G111","saida wa.me"]}
+✅ 5b. telefone depois do WhatsApp (mesma janela): sem Ads, GA4 click_telefone {"c5b":["hit G-04JZ3XEL1C click_telefone G111"]}
+✅ 5. 1º clique no telefone (sessão nova): conversion do Ads + GA4 click_telefone {"c":["ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit  conversion G111","hit G-04JZ3XEL1C click_telefone G111"]}
+✅ 5c. WhatsApp depois do telefone (mesma janela): sem Ads, GA4 sai   {"cw":["hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C click G111","saida wa.me"]}
+✅ 5d. Doctoralia: GA4 agenda_doctoralia, sem Ads, sem agendamento_whatsapp {"d1":["hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C agenda_doctoralia G111","hit G-04JZ3XEL1C click G111","saida www.doctoralia.com.br"]}
+✅ 5e. WhatsApp depois do Doctoralia ainda é o 1º contato (Ads sai)   {"d2":["ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit  conversion G111","hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C click G111","saida wa.me"]}
+✅ 6. clique apressado (no DOMContentLoaded): conversion do Ads sai   {"linha":["etiqueta G-04JZ3XEL1C","saida wa.me","hit G-04JZ3XEL1C page_view G111","hit G-04JZ3XEL1C ? G111","etiqueta AW-620455971","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit  conversion G111","hit AW-620455971 page_view G111","hit  ? -"]}
+✅ 6b. clique na mesma aba: Ads + GA4 saem antes de trocar de página  {"linha":["etiqueta G-04JZ3XEL1C","hit G-04JZ3XEL1C page_view G111","hit G-04JZ3XEL1C ? G111","etiqueta AW-620455971","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit  conversion G111","hit AW-620455971 page_view G111","hit  ? -","saida wa.me"],"url":"https://uroclinicario.com.br/"}
+✅ 7. Recusar e recarregar: 0 pedido ao Google (nem o gtag.js), WhatsApp abre {"depois":["saida wa.me"],"dataLayer":"undefined","avisoDeNovo":false}
+✅ 7b. escolha guardada "recusado": 0 pedido ao Google, dataLayer inexistente {"linha":["saida wa.me","saida www.doctoralia.com.br"],"dataLayer":"undefined"}
+✅ 8. Recusar com a página aberta: 0 hit depois (conversão inclusive) {"depois":["saida wa.me","saida www.doctoralia.com.br"]}
+✅ 8b. Rever a escolha + Ok depois de recusar: gtag.js carrega e o contato conta {"depois":["etiqueta G-04JZ3XEL1C","hit G-04JZ3XEL1C page_view G111","hit G-04JZ3XEL1C ? G111","etiqueta AW-620455971","hit AW-620455971 page_view G111","hit  ? -","ads AW-620455971/zxJzCOn6y70CEKPQ7acC G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit G-04JZ3XEL1C agendamento_whatsapp G111","hit  conversion G111","hit G-04JZ3XEL1C click G111","hit G-04JZ3XEL1C click G111","saida wa.me"]}
+✅ 9. nenhum en=<evento do GA4> indo pro AW- (vazamento)              {"hitsAW":["hit AW-620455971 page_view G111","hit  ? -","hit  conversion G111"],"vaza":[]}
+
+10. nada deixou de contar: eventos GA4 ANTES (produção) × DEPOIS (build local)
+  ✅ / #2 Agendar pelo WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #0 (21) 97621-9403 → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #1 Agendar consulta → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #3 Agendar consulta → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #4 Agendar no Doctoralia → https://www.doctoralia.com.br/diego-perdigao/urologista/
+      ANTES: agendamento_whatsapp, click | DEPOIS: agenda_doctoralia, click | Ads depois: não | renome Doctoralia
+  ✅ / #5 Agendar no Doctoralia → https://www.doctoralia.com.br/pedro-boechat-de-souza/uro
+      ANTES: agendamento_whatsapp, click | DEPOIS: agenda_doctoralia, click | Ads depois: não | renome Doctoralia
+  ✅ / #6 Agendar no Doctoralia → https://www.doctoralia.com.br/joao-boechat-de-souza/urol
+      ANTES: agendamento_whatsapp, click | DEPOIS: agenda_doctoralia, click | Ads depois: não | renome Doctoralia
+  ✅ / #7 Agendar avaliação → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #8 WhatsApp (21) 97621-9403 → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #9 WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ / #10 WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #0 (21) 97621-9403 → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #1 Agendar consulta → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #2 Agendar pelo WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #3 (21) 97621-9403 → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #4 WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #7 WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #5 clique aqui → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato #6 WhatsApp → https://wa.me/5521976219403
+      ANTES: agendamento_whatsapp, click | DEPOIS: agendamento_whatsapp, click | Ads depois: sim (1º contato)
+  ✅ /entre-em-contato formulário (envio)
+      ANTES: agendamento_whatsapp, form_start | DEPOIS: agendamento_whatsapp, form_start | Ads depois: sim (1º contato)
+✅ 10. todo evento GA4 que saía continua saindo (salvo o renome do Doctoralia) {"caminhos":20}
+
+✅ medição: 18/18 casos
