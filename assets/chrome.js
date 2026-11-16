@@ -79,6 +79,7 @@
           '<a href="urologista-bonsucesso.html"><span class="di">'+ico.pin+'</span><span>Bonsucesso<small>Zona Norte · Ilha do Governador</small></span></a>'+
           '<a href="unidades.html"><span class="di">'+ico.pin+'</span><span>Todas as unidades<small>Endereços e teleconsulta</small></span></a>'+
         '</div></div>'+
+      '<div class="nav-item"><a class="nav-link'+active('blog')+'" href="blog.html">Blog</a></div>'+
       '<div class="nav-item"><a class="nav-link'+active('contato')+'" href="contato.html">Contato</a></div>'+
     '</nav>'+
     '<div class="header-cta">'+
@@ -95,6 +96,7 @@
     '<div class="sub">'+specs.map(function(s){return '<a href="'+s[2]+'">'+s[0]+'</a>';}).join('')+'</div>'+
     '<a href="unidades.html">Unidades</a>'+
     '<div class="sub"><a href="urologista-barra-da-tijuca.html">Urologista na Barra da Tijuca</a><a href="urologista-bonsucesso.html">Urologista em Bonsucesso</a></div>'+
+    '<a href="blog.html">Blog</a>'+
     '<a href="contato.html">Contato</a>'+
     '<div class="mm-cta"><a class="btn btn-salmon" href="'+WA+'" target="_blank">'+ico.wa+'Agendar pelo WhatsApp</a></div>'+
   '</div>';
@@ -119,6 +121,7 @@
         '<li><a href="sobre.html">Sobre nós</a></li>'+
         '<li><a href="sobre.html#corpo">Corpo clínico</a></li>'+
         '<li><a href="unidades.html">Unidades</a></li>'+
+        '<li><a href="blog.html">Blog</a></li>'+
         '<li><a href="contato.html">Contato</a></li>'+
       '</ul></div>'+
       '<div><h4>Especialidades</h4><ul class="f-list">'+
@@ -203,7 +206,7 @@
           phys("Dr. Diego Coutinho Perdigão","CRM-RJ 52 934895 · RQE 32110","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. Pedro Boechat","CRM-RJ 52 906174","Urologista no Rio de Janeiro — uro-oncologia e cirurgia robótica."),
           phys("Dr. João Boechat","CRM-RJ 52 1050079","Urologista no Rio de Janeiro — urologia reconstrutora e cirurgia genital."),
-          phys("Dr. Gabriel Crelier","CRM-RJ 52.110054-8","Urologista e andrologista no Rio de Janeiro — saúde sexual masculina, estética peniana, prótese peniana, Doppler peniano e infertilidade masculina.")
+          phys("Dr. Gabriel Crelier","CRM-RJ 52 110054-8 · RQE 51033","Urologista com atuação em andrologia no Rio de Janeiro. Saúde sexual masculina, estética peniana, prótese peniana, Doppler peniano e infertilidade masculina.")
         ]
       }
     ]

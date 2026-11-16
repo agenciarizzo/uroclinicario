@@ -163,6 +163,7 @@ p{margin:0 0 1.1em}
 .nav-item:hover .nav-link{color:var(--salmon-deep)}
 .nav-item:hover .chev{transform:rotate(180deg)}
 .nav-link.is-active{color:var(--salmon-deep)}
+.nav-link{white-space:nowrap}
 .nav-link.is-active::after{content:"";position:absolute;left:.95em;right:.95em;bottom:.35em;height:2px;background:var(--salmon)}
 
 .dropdown{position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(8px);
